@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TUDONI — Film Director</title>
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0b0b0b;
+  --text: #eaeaea;
+  --muted: #9a9a9a;
+  --maxw: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "IBM Plex Sans", "Noto Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+header {
+  padding: 80px 40px 60px;
+  max-width: var(--maxw);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header div {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 14px;
+}
+
+nav a:hover { color: var(--text); }
+
+.hero {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  max-width: var(--maxw);
+  margin: 160px auto;
+  padding: 0 40px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 60px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.work {
+  margin-bottom: 140px;
+}
+
+.work img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.work-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.meta {
+  max-width: 720px;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  max-width: 640px;
+}
+
+.about-text p {
+  margin-bottom: 28px;
+}
+
+footer {
+  max-width: var(--maxw);
+  margin: 160px auto 80px;
+  padding: 0 40px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+a { color: var(--text); }
+
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  header { flex-direction: column; gap: 20px; }
+  nav a { margin-left: 0; margin-right: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>TUDONI</div>
+  <nav>
+    <a href="#works">Works</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="hero.jpg" alt="Film still">
+</div>
+
+<section id="works">
+  <h2>Works</h2>
+
+  <div class="work">
+    <img src="moduli1.jpg" alt="Moduli still">
+    <div class="work-title">Moduli (美都里)</div>
+    <div class="meta">
+      Meduli is a bar singer. Every week, she and her lover Ale see each other across town. They meet in sparsely attended cinemas, in crowded parks, and by a river on the outskirts of the city.
+      <br><br>
+      2025 · Color · Digital
+    </div>
+  </div>
+
+  <div class="work">
+    <img src="liuli1.jpg" alt="LiuLi still">
+    <div class="work-title">LiuLi (琉璃舞女)</div>
+    <div class="meta">
+      On an ordinary night, Xiaoxiang decides to join a theatre company touring across the country. Silent thoughts drift through a grey-white room.
+      <br><br>
+      2025 · Color · Digital
+    </div>
+  </div>
+
+  <div class="work">
+    <img src="The 300 Blows.jpg" alt="The 300 Blows still">
+    <div class="work-title">The 300 Blows (三百击)</div>
+    <div class="meta">
+      Xiaokai, a dancer in a song-and-dance troupe, swallows a bottle of hydrogen cyanide after his boyfriend Xiaoyue leaves him. He remains at home, waiting for death to arrive.
+      <br><br>
+      2024 · Color · Digital
+    </div>
+  </div>
+
+  <div class="work">
+    <img src="nowhere1.jpg" alt="No Where still">
+    <div class="work-title">No Where (无法入睡)</div>
+    <div class="meta">
+      Two strangers meet at midnight and decide to rent a room. Every hotel is fully booked.
+      <br><br>
+      2024 · Color · Digital
+    </div>
+  </div>
+
+</section>
+
+<section id="about">
+  <h2>About</h2>
+
+  <div class="about-container">
+
+    <div class="about-photo">
+      <img src="wenyuzhang1.JPG" alt="Wenyu Zhang portrait">
+    </div>
+
+    <div class="about-text">
+      <p><strong>Wenyu Zhang (TUDONI)</strong> (b. 1995, Chengdu) is an independent film director and former actor. Moving across multiple artistic forms, he arrived at cinema as a way to observe and articulate the essence of human emotion.</p>
+
+      <p>
+      张文瑜（TUDONI），1995年出生于成都。曾为演员，现为独立电影导演。穿行于不同艺术形式之后，他将电影视为观察与抵达人类情感本质的方式。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  Email: zwy506902626@gmail.com
+</section>
+
+<footer>
+  © Wenyu Zhang
+</footer>
+
+</body>
+</html>
